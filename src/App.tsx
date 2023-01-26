@@ -7,7 +7,6 @@ function App() {
     a: 1,
     b: 2,
   };
-
   return (
     <div className="App">
       <header className="App-header">
