@@ -1,0 +1,27 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["plugin:react/recommended", "airbnb-typescript/base", "prettier"],
+  "overrides": [],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "tsconfig.json"
+  },
+  "plugins": ["react", "import"],
+  "rules": {
+    "sort-keys": [
+      "error",
+      "asc",
+      { "caseSensitive": false, "natural": true, "minKeys": 2 }
+    ],
+    "no-unused-vars": [
+      "error",
+      { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }
+    ],
+    "no-duplicate-imports": "error",
+    "no-console": "error"
+  }
+}
